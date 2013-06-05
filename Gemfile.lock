@@ -63,3 +63,4 @@ DEPENDENCIES
   dashing
   htmlentities
   nokogiri
+  sinatra-contrib

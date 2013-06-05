@@ -1,7 +1,7 @@
-buzzwords = ['SocialU', 'Leverage', 'Pivoting', 'Turn-key', 'Streamlininess', 'Exit strategy', 'Synergy', 'Enterprise', 'Web 2.0'] 
+buzzwords = ['Burbank', 'CallShield', 'Westlake', 'East Coast', 'International', 'Toll free', 'Synergy', 'Enterprise', 'Redirect'] 
 buzzword_counts = Hash.new({ value: 0 })
 
-SCHEDULER.every '2s' do
+SCHEDULER.every '3s' do
   random_buzzword = buzzwords.sample
   buzzword_counts[random_buzzword] = { label: random_buzzword, value: (buzzword_counts[random_buzzword][:value] + 1) % 30 }
   
