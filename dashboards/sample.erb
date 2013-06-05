@@ -5,26 +5,28 @@
 
 <div class="header">
 	<input type="button" id="fullscreen" value="Go Fullscreen">
+	<input type="button" value="Delete welcome" onclick="deleteWidget('welcome')">
+	<input type="button" value="Delete Server Load" onclick="deleteWidget('synergy')">
 </div>
 <div class="gridster">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1" id="welcome">
       <div data-id="welcome" data-view="Text" data-title="CallSource Executive Dashboard" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" id="synergy">
       <div data-id="synergy" data-view="Meter" data-title="Server Load" data-min="0" data-max="100"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2" id="buzzwords">
       <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="CallTrack Queues" data-moreinfo="In thousands"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" id="valuation">
       <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1" id="convergence">
       <div data-id="convergence" data-view="Graph" data-title="Conversion Rate" style="background-color:#ff9618"></div>
     </li>
     

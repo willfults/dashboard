@@ -8,7 +8,12 @@ $(document).ready(function() {
     	$(document).fullScreen(true);
     });
     
-    //http://gridster.net/
-    var gridster = $(".gridster ul").gridster().data('gridster');
 	
 });
+
+ function deleteWidget(id){
+	 var gridsters = $(".gridster ul").gridster().data('gridster');
+	 gridsters.remove_widget( $('#' + id) );
+ }
+
+
