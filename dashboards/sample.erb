@@ -4,9 +4,18 @@
 <% content_for(:title) { "My super sweet dashboard" } %>
 
 <div class="header">
-	<input type="button" id="fullscreen" value="Go Fullscreen">
-	<input type="button" value="Delete welcome" onclick="deleteWidget('welcome')">
-	<input type="button" value="Delete Server Load" onclick="deleteWidget('synergy')">
+	<div class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Add/Remove Widgets</a>
+	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+	    <li><a tabindex="-1" href="#" onclick="deleteWidget('welcome')">Delete welcome widget</a></li>
+	    <li><a tabindex="-1" href="#"  onclick="deleteWidget('synergy')">Delete Server Load widget</a></li>
+	    <li><a tabindex="-1" href="#"  onclick="deleteWidget('buzzwords')">Delete CallTrack Queues Widget</a></li>
+	    <li class="divider"></li>
+	    <li><a tabindex="-1" href="#" id="fullscreen">Go Fullscreen</a></li>
+	    <li class="divider"></li>
+	    <li><a tabindex="-1" href="#" onclick="addWidget()">Add example widget</a></li>
+    </ul>
+    </div>
 </div>
 <div class="gridster">
   <ul>
